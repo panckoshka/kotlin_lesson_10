@@ -72,7 +72,7 @@ internal class MessageServiceTest {
     }
 
     @Test
-    fun  messageEdit(){
+    fun  messageEditchatEdit(){
         val service = MessageService
 
         service.chatAdd(Chat(chatName = "Sasha"))
