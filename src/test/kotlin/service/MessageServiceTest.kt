@@ -36,7 +36,7 @@ internal class MessageServiceTest {
         service.messageAdd(4, Message(messageText = "rrr", markerIn = false))
         service.messageAdd(4, Message(messageText = "ttt", markerIn = false, read = true))
 
-        service.messagesCountChat(1)
+        service.messagesCountChat(2)
 
         assertEquals("Sasha", service.chatGet()[0].chatName)
         assertEquals("qqq", service.messageGet()[0].messageText)
@@ -47,7 +47,7 @@ internal class MessageServiceTest {
     }
 
     @Test
-    fun messageChatDelete(){
+    fun messageChatDelete() {
         val service = MessageService
 
         service.chatAdd(Chat(chatName = "Sasha"))
@@ -65,14 +65,14 @@ internal class MessageServiceTest {
         service.chatDelete(1)
         service.messageDelete(4)
         assertEquals(3, service.chatGet().size)
-        assertEquals(3,service.messageGet().size)
+        assertEquals(3, service.messageGet().size)
 
         assertFailsWith<ChatNotFoundException> { service.chatDelete(22) }
         assertFailsWith<MessegeNotFoundException> { service.messageDelete(33) }
     }
 
     @Test
-    fun  messageEditchatEdit(){
+    fun messageEditchatEdit() {
         val service = MessageService
 
         service.chatAdd(Chat(chatName = "Sasha"))
@@ -96,5 +96,25 @@ internal class MessageServiceTest {
         assertFailsWith<ChatNotFoundException> { service.chatEdit(33, " ") }
         assertFailsWith<MessegeNotFoundException> { service.messageEdit(44, " ") }
 
+    }
+
+    @Test
+    fun messageLikeCount(){
+        val service = MessageService
+        service.chatAdd(Chat(chatName = "Sasha"))
+        service.chatAdd(Chat(chatName = "Nastya"))
+        service.chatAdd(Chat(chatName = "Nika"))
+        service.chatAdd(Chat(chatName = "Masha"))
+
+
+        service.messageAdd(1, Message(messageText = "qqq", markerIn = true, read = true))
+        service.messageAdd(1, Message(messageText = "www", markerIn = true, messageLike = 2))
+        service.messageAdd(2, Message(messageText = "eee", markerIn = true, messageLike = 3))
+        service.messageAdd(2, Message(messageText = "yyy", markerIn = false, read = true))
+        service.messageAdd(4, Message(messageText = "rrr", markerIn = false, messageLike = 5))
+        service.messageAdd(4, Message(messageText = "ttt", markerIn = false, read = true, messageLike = 6))
+
+        service.messageLikeCount()
+        assertEquals(16, service.messageLikeCount())
     }
 }

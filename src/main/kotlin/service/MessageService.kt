@@ -8,6 +8,8 @@ import wallMessage.MessegeNotFoundException
 object MessageService {
     var chatGlobalId = 0
     var messageIdGlobal = 0
+    var messageTopLik = 6
+    val digestEmtyControl = "Digest is control"
 
     private val listChat = mutableListOf<Chat>()
     private val listChatDelete = mutableListOf<Chat>()
@@ -112,6 +114,18 @@ object MessageService {
         it.chatId == chatId && !it.read
     }.size
 
+
+    //14. likes ful count
+    fun messageLikeCount(): Int = listMessage
+        .asSequence()
+        .filter {
+            it.messageLike > 0
+        }
+
+        .map {
+            it.messageLike
+        }
+        .sum()
 }
 
 

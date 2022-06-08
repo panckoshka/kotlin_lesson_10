@@ -6,6 +6,7 @@ data class Message(
     val messageId: Int = 0,
     var messageText: String,
     val markerIn: Boolean,      // true - входящие, false - исходящие
-    var read: Boolean = false   // не прочитанные
+    var read: Boolean = false,   // не прочитанные
+    var messageLike: Int = 0
 ) {
 }
