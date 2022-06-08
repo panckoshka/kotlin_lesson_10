@@ -5,6 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18f07612-69e9-4cd1-b34a-ddd1337c0f5c" name="Changes" comment="first commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/service/MessageService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/service/MessageService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/wallMessage/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/wallMessage/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/wallMessage/Message.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/wallMessage/Message.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/service/MessageServiceTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/service/MessageServiceTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,6 +42,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2A9qkinLSU5GIuzc9LkEvg32Lm2" />
@@ -46,14 +55,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": ""
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -165,10 +175,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.MessageServiceTest" />
-        <item itemvalue="Gradle.MessageServiceTest.messageEdit" />
         <item itemvalue="Gradle.MessageServiceTest.chatAddMessageAddMessagesCountChatFul" />
-        <item itemvalue="Gradle.MessageServiceTest.messageChatDelete" />
         <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="Gradle.MessageServiceTest.messageEdit" />
+        <item itemvalue="Gradle.MessageServiceTest.messageChatDelete" />
       </list>
     </recent_temporary>
   </component>
@@ -187,6 +197,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/wallMessage/Main.kt</url>
+          <line>35</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/kotlin_lesson_10$MessageServiceTest_chatAddMessageAddMessagesCountChatFul.ic" NAME="MessageServiceTest.chatAddMessageAddMessagesCountChatFul Coverage Results" MODIFIED="1654542557537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
